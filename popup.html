@@ -3,33 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bypass Waffles Portal</title>
+  <title>PassXdc</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <div class="popup-container">
-    <h1>Welcome to Waffles Portal Bypasser!</h1>
-    <p>This extension will help you bypass the waffles-portal-root div.</p>
-    
-    <div class="toggle-container">
-      <label for="ID_HERE" class="toggle-switchy">
-      	<input checked type="checkbox" id="ID_HERE">
-      	<span class="toggle">
-      		<span class="switch"></span>
-      	</span>
-      </label>
+  <header class="popup-header">
+    <img src="./images/icon-128.png" alt="">
+      <h1>PassXdc3</h1>
+      <p>Version 1.0</p>
+  </header>
+
+  <main class="popup-main">
+    <div class="content">
+      <h2>Welcome to passXdc</h2>
+      <p>This extension will help you bypass the waffles-portal-root div.</p>
     </div>
 
-    <div>
-      <h2>Reading Time:</h2>
-      <p id="readingTime">Calculating...</p>
+    <div class="toggle-container">
+      <label class="toggle-label">
+        <input checked="" type="checkbox" id="toggleButton" class="toggle-switchy">
+        <span class="toggle"></span>
+        <span class="switch"></span>
+      </label>
+      <span id="bypassStatus" class="toggle-text">Bypass is OFF</span>
     </div>
-    
+  </main>
+
+  <footer class="popup-footer">
     <div class="developer-info">
-      <p>Developed by Mimoun Jakhrouti, Data Analyst</p>
-      <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="linkedin-button">Follow me on LinkedIn</a>
+      <span>Developed by</span> 
+      <span class="developer">Mimoun Jakhrouti</span> 
+      <span>Data Analyst</span>
+      <a href="https://www.linkedin.com/in/mimoun-jakhrouti/" target="_blank" class="linkedin-button">Follow me on LinkedIn</a>
     </div>
-  </div>
+  </footer>
 
   <script src="popup.js"></script>
 </body>
