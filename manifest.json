@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Bypass Waffles Portal",
+  "name": "passXdc",
   "version": "1.0",
   "permissions": ["activeTab"],
   "background": {
