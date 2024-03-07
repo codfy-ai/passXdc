@@ -13,7 +13,6 @@ if (article) {
   readingTimeElement.textContent = `⏱️ ${readingTime} min read`;
 }
 
-// Toggle Bypass
 let bypassStatus = false;
 toggleButton.addEventListener('click', () => {
   bypassStatus = !bypassStatus;
