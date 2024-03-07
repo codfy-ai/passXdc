@@ -39,3 +39,22 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+.developer-info {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.developer-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.developer-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.developer-info a:hover {
+  text-decoration: underline;
+}
