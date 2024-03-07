@@ -1,10 +1,3 @@
-const tabs = await chrome.tabs.query({
-  url: [
-    "https://developer.chrome.com/docs/webstore/*",
-    "https://developer.chrome.com/docs/extensions/*",
-  ]
-});
-
 const readingTimeElement = document.getElementById('readingTime');
 const toggleButton = document.getElementById('toggleButton');
 const bypassStatusElement = document.getElementById('bypassStatus');
