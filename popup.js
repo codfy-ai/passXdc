@@ -2,7 +2,6 @@ const readingTimeElement = document.getElementById('readingTime');
 const toggleButton = document.getElementById('toggleButton');
 const bypassStatusElement = document.getElementById('bypassStatus');
 
-// Calculate Reading Time (you can use your existing code here)
 const article = document.querySelector("article");
 if (article) {
   const text = article.textContent;
@@ -13,16 +12,14 @@ if (article) {
   readingTimeElement.textContent = `⏱️ ${readingTime} min read`;
 }
 
-let bypassStatus = false;
+let bypassStatus = false; 
 toggleButton.addEventListener('click', () => {
   bypassStatus = !bypassStatus;
   if (bypassStatus) {
     toggleButton.textContent = 'Disable Bypass';
     bypassStatusElement.textContent = 'Bypass is ON';
-    // Add your code here to activate bypass
   } else {
     toggleButton.textContent = 'Enable Bypass';
     bypassStatusElement.textContent = 'Bypass is OFF';
-    // Add your code here to deactivate bypass
   }
 });
