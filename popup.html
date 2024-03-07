@@ -7,28 +7,39 @@
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <header class="popup-header">
-    <img src="logo.png" alt="Logo">
+  <div class="popup-container">
+    <h1>Welcome to Waffles Portal Bypasser!</h1>
+    <p>This extension will help you bypass the waffles-portal-root div.</p>
+    
+    <div class="toggle-container">
+      <label class="toggle-label">
+        <input type="checkbox" id="toggleButton" class="toggle-checkbox">
+        <div class="toggle">
+          <svg width="100%" viewBox="-2.5 -2.5 71 50" version="1.1" xmlns="http://www.w3.org/2000/svg" role="checkbox" aria-checked="false" aria-disabled="false">
+            <g>
+              <rect fill="#E4E4E4" x="1" y="16.8" width="64.4" height="12.6" rx="6.3"></rect>
+              <g transform="translate(31.6, 0)">
+                <circle class="outer-circle" cx="23" cy="22.4" r="22.4"></circle>
+                <circle class="on" fill="#0688CB" cx="12" cy="22.4" r="9.8"></circle>
+                <circle class="off" fill="#4B4B4B" cx="-24" cy="22.4" r="9.8"></circle>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <span id="bypassStatus" class="toggle-text">Bypass is OFF</span>
+      </label>
+    </div>
+
     <div>
-      <h1 id="appName">PassXdc3</h1>
-      <p id="appVersion">Version 1.0</p>
+      <h2>Reading Time:</h2>
+      <p id="readingTime">Calculating...</p>
     </div>
-  </header>
-
-  <main class="popup-main">
-    <div class="content">
-      <h2>Welcome to Waffles Portal Bypasser!</h2>
-      <p>This extension will help you bypass the waffles-portal-root div.</p>
-      <!-- Add more content here as needed -->
-    </div>
-  </main>
-
-  <footer class="popup-footer">
+    
     <div class="developer-info">
       <p>Developed by Mimoun Jakhrouti, Data Analyst</p>
       <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="linkedin-button">Follow me on LinkedIn</a>
     </div>
-  </footer>
+  </div>
 
   <script src="popup.js"></script>
 </body>
